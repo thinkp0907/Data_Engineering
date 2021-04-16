@@ -56,7 +56,7 @@
 
 
 
-![image-20210408112034134](C:\Users\Chorlock\AppData\Roaming\Typora\typora-user-images\image-20210408112034134.png)
+![image-20210408112034134](https://github.com/thinkp0907/Data_Engineering/blob/main/BigData_Skills/img/%ED%94%8C%EB%9F%BC%20%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98%20%EC%9C%A0%ED%98%954.png)
 
 **[플럼 아키텍처 유형4]**
 
