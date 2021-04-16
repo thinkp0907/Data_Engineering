@@ -4,7 +4,7 @@
 
 
 
-![image-20210408105322482](C:\Users\Chorlock\AppData\Roaming\Typora\typora-user-images\image-20210408105322482.png)
+![image-20210408105322482](https://github.com/thinkp0907/Data_Engineering/blob/main/BigData_Skills/img/%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%88%98%EC%A7%91%20%EC%A0%88%EC%B0%A8.PNG)
 
 **[빅데이터 수집 절차]**
 
@@ -34,13 +34,13 @@
 
 플럼 메커니즘은 Source, Channel, Sink만을 활용하는 매우 단순하면서 직관적인 구조를 갖는다. 플럼의 Source에서 데이터를 로드하고, Channel에서 데이터를 임시 저장해 놓았다가, Sink를 통해 목적지에 데이터를 최종 적재한다. 이러한 메커니즘을 기반으로 플럼은 수집 요건에 따라 다양한 분산 아키텍처 구조로 확대할 수 있으며, 아래의 대표적인 4가지 구성 방안을 소개한다.
 
-![image-20210408110630230](C:\Users\Chorlock\AppData\Roaming\Typora\typora-user-images\image-20210408110630230.png)
+![image-20210408110630230](https://github.com/thinkp0907/Data_Engineering/blob/main/BigData_Skills/img/%ED%94%8C%EB%9F%BC%20%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98%20%EC%9C%A0%ED%98%951.PNG)
 
 **[플럼 아키텍처 유형1]**
 
 **플럼 아키텍처 유형1**은 가장 단순한 플럼 에이전트 구성이다. 원천 데이터를 특벼한 처리 없이 단순 수집/적재 할 때 주로 활용한다.
 
-![image-20210408110930975](C:\Users\Chorlock\AppData\Roaming\Typora\typora-user-images\image-20210408110930975.png)
+![image-20210408110930975](https://github.com/thinkp0907/Data_Engineering/blob/main/BigData_Skills/img/%ED%94%8C%EB%9F%BC%20%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98%20%EC%9C%A0%ED%98%952.PNG)
 
 **[플럼 아키텍처 유형2]**
 
@@ -48,7 +48,7 @@
 
 
 
-![플럼 아키텍처 유형3](C:\Users\Chorlock\Data_Engineering\BigData_Skills\img\플럼 아키텍처 유형3.PNG)
+![플럼 아키텍처 유형3](https://github.com/thinkp0907/Data_Engineering/blob/main/BigData_Skills/img/%ED%94%8C%EB%9F%BC%20%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98%20%EC%9C%A0%ED%98%953.PNG)
 
 **[플럼 아키텍처 유형3]**
 
@@ -72,7 +72,7 @@
 
 첫 번째로 100대의 스마트카에 대한 상태 정보 로그 파일이 로그 시뮬레이터를 통해 매일 생성된다. 이렇게 만들어진 상태 정보 파일을 플럼 에이전트가 일 단위로 수집해서 하둡에 적재하고 향후 대규모 배치 분석에 활용한다.
 
-![image-20210408113404763](C:\Users\Chorlock\AppData\Roaming\Typora\typora-user-images\image-20210408113404763.png)
+![image-20210408113404763](https://github.com/thinkp0907/Data_Engineering/blob/main/BigData_Skills/img/%EC%8A%A4%EB%A7%88%ED%8A%B8%EC%B9%B4%EC%97%90%EC%84%9C%EC%9D%98%20%ED%94%8C%EB%9F%BC%20%ED%99%9C%EC%9A%A9%20%EB%B0%A9%EC%95%881.PNG)
 
 **['스마트카'에서의 플럼 활용 방안1 - 스마트카 상태 정보의 일 단위 수집]**
 
@@ -80,7 +80,7 @@
 
 
 
-![image-20210408113545412](C:\Users\Chorlock\AppData\Roaming\Typora\typora-user-images\image-20210408113545412.png)
+![image-20210408113545412](https://github.com/thinkp0907/Data_Engineering/blob/main/BigData_Skills/img/%EC%8A%A4%EB%A7%88%ED%8A%B8%EC%B9%B4%EC%97%90%EC%84%9C%EC%9D%98%20%ED%94%8C%EB%9F%BC%20%ED%99%9C%EC%9A%A9%20%EB%B0%A9%EC%95%882.PNG)
 
 **['스마트카'에서의 플럼 활용 방안2 - 스마트카 운전자의 운행 정보를 실시간으로 수집]**
 
