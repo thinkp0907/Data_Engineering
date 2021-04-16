@@ -42,7 +42,7 @@ HBase는 하둡 기반의 Column-Oriented NoSQL 데이터베이스로서 스키�
 - MemStore에 저장된 데이터는 특정 시점이 되면 HFile로 HDFS에 플러시 된다.
 - HFile은 HRegion의 상황에 따라 최적의 HFile로 재구성되는 작업이 이뤄진다.
 
-![image-20210416150852000](C:\Users\Chorlock\AppData\Roaming\Typora\typora-user-images\image-20210416150852000.png)
+![image-20210416150852000](https://github.com/thinkp0907/Data_Engineering/blob/main/BigData_Skills/img/HBase%20%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98.PNG)
 
 **[HBase 아키텍처]**
 
@@ -59,7 +59,7 @@ HBase는 하둡 기반의 Column-Oriented NoSQL 데이터베이스로서 스키�
 
 수집 영역 개발에서 플럼을 이용해 수집한 스마트카 운전자의 운행 정보를 카프카까지 전송했다. 이번에는 카프카에 저장돼 있는 데이터를 **스톰이** 받아서 HBase의 테이블에 모두 적재한다. 또한 HBase에 저장된 스마트카 운전자의 운행 정보를 **특정 조건에 따라 필터링해서 신속하게 조회**해 보고, 하이브 핸들러를 이용해 HBase에 저장된 데이터와 하이브 데이터를 동시에 활용해 본다.
 
-![image-20210416152826905](C:\Users\Chorlock\AppData\Roaming\Typora\typora-user-images\image-20210416152826905.png)
+![image-20210416152826905](https://github.com/thinkp0907/Data_Engineering/blob/main/BigData_Skills/img/%ED%8C%8C%EC%9D%BC%EB%9F%BF%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90%EC%84%9C%EC%9D%98%20HBase%20%ED%99%9C%EC%9A%A9%20%EB%B0%A9%EC%95%88.PNG)
 
 **[파일럿 프로젝트에서의 HBase 활용방안]**
 
