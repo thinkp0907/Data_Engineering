@@ -23,19 +23,19 @@
 
 카프카는 클러스터 방식에 따라 세 가지 아키텍처 구성이 가능하며, 이때 **주키퍼**를 반드시 이용해야 한다.
 
-![image-20210408115650438](C:\Users\Chorlock\AppData\Roaming\Typora\typora-user-images\image-20210408115650438.png)
+![image-20210408115650438](https://github.com/thinkp0907/Data_Engineering/blob/main/BigData_Skills/img/%EC%B9%B4%ED%94%84%EC%B9%B4%20%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98%20%EC%9C%A0%ED%98%951.PNG)
 
 **[카프카 아키텍처 유형1 - 싱글 브로커/싱글 노드]**
 
 **카프카 아키텍처 유형1**은 1대의 카프카 서버만 설치하고, 1개의 Broker만 구성한 아키텍처다. 대량의 발행/소비 요건이 없고, 업무 도메인이 단순할 때 이용한다.
 
-![image-20210408120918091](C:\Users\Chorlock\AppData\Roaming\Typora\typora-user-images\image-20210408120918091.png)
+![image-20210408120918091](https://github.com/thinkp0907/Data_Engineering/blob/main/BigData_Skills/img/%EC%B9%B4%ED%94%84%EC%B9%B4%20%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98%20%EC%9C%A0%ED%98%952.PNG)
 
 **[카프카 아키텍처 유형2 - 멀티 브로커/싱글 노드]**
 
 **카프카 아키텍처 유형2**는 1대의 카프카 서버에 2개의 Broker를 구성한 아키텍처다. 물리적인 카프카 서버가 1대 이므로 역시 대량의 발행/소비 요건에는 사용하기 어렵지만 **업무 도메인이 복잡해서 메시지 처리를 분리 관리**해야 할 때 이용한다
 
-![image-20210408121549546](C:\Users\Chorlock\AppData\Roaming\Typora\typora-user-images\image-20210408121549546.png)
+![image-20210408121549546](https://github.com/thinkp0907/Data_Engineering/blob/main/BigData_Skills/img/%EC%B9%B4%ED%94%84%EC%B9%B4%20%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98%20%EC%9C%A0%ED%98%953.PNG)
 
 **[카프카 아키텍처 유형3 - 멀티 브로커/멀티 노드]**
 
@@ -47,7 +47,7 @@
 
 이번 파일럿 프로젝트 **'스마트카'**에서 카프카의 역할은 단순하다. **플럼(Flume)**이 실시간 데이터를 수집해 카프카 토픽에 전송하면 카프카는 전송받은 데이터를 토픽에 임시로 저장하고 있다가 컨슈머 프로그램이 작동해 토픽에서 데이터를 가져간다.
 
-![image-20210408134351758](C:\Users\Chorlock\AppData\Roaming\Typora\typora-user-images\image-20210408134351758.png)
+![image-20210408134351758](https://github.com/thinkp0907/Data_Engineering/blob/main/BigData_Skills/img/%EC%8A%A4%EB%A7%88%ED%8A%B8%EC%B9%B4%EC%97%90%EC%84%9C%EC%9D%98%20%EC%B9%B4%ED%94%84%EC%B9%B4%20%ED%99%9C%EC%9A%A9%20%EB%B0%A9%EC%95%881.PNG)
 
 **['스마트카'에서 카프카 활용 방안1]**
 
@@ -59,7 +59,7 @@
 
 카프카를 대규모 분산 환경으로 구성했는데, HBase 장애가 발생해도 카프카에서 데이터를 저장해 놓았다가 HBase가 복구되면 곧바로 재처리가 가능해진다. 또한 플럼이 수집한 데이터를 카프카의 토픽에 비동기로 전송함으로써 수집 속도가 빨라지는 장점도 있다.
 
-![image-20210408140045755](C:\Users\Chorlock\AppData\Roaming\Typora\typora-user-images\image-20210408140045755.png)
+![image-20210408140045755](https://github.com/thinkp0907/Data_Engineering/blob/main/BigData_Skills/img/%EC%8A%A4%EB%A7%88%ED%8A%B8%EC%B9%B4%EC%97%90%EC%84%9C%20%EC%B9%B4%ED%94%84%EC%B9%B4%20%ED%99%9C%EC%9A%A9%20%EB%B0%A9%EC%95%882.PNG)
 
 **['스마트카'에서 카프카 활용 방안2]**
 
